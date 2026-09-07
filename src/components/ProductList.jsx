@@ -6,7 +6,7 @@ const ProductList = ({ products, onSelect }) => {
     <Container sx={{ py: 2 }}>
       <Grid container spacing={3}>
         {products.map((product) => (
-          <Grid item key={product.id} xs={12} sm={6} md={4}>
+          <Grid key={product.id} size={{ xs: 12, sm: 6, md: 4 }}>
             <ProductCard product={product} onSelect={onSelect} />
           </Grid>
         ))}
